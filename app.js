@@ -37,17 +37,18 @@ res.render("compose");
 });
 
 
-
 app.get("/posts/:postName", function(req, res){
 const requestedTitle = _.lowerCase(req.params.postName);
-const requestedBody = req.params.postBody;
-res.render("post", {
-  requestedTitle: requestedTitle,
-  requestedBody: requestedBody
 
-});
 posts.forEach(function(post){
   const storedTitle = _.lowerCase(post.title);
+  if( storedTitle === requestedTitle){
+    res.render("post", {
+      title:post.title,
+      content:post.content
+    });
+  }
+
 });
 });
 
