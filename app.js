@@ -21,7 +21,6 @@ app.get("/", function(req, res){
     posts: posts
 
   });
-
 });
 
 app.get("/about",function(req, res){
@@ -48,7 +47,6 @@ posts.forEach(function(post){
       content:post.content
     });
   }
-
 });
 });
 
@@ -63,8 +61,6 @@ const post = {
 posts.push(post);
 res.redirect("/");
 });
-
-
 
 
 app.listen(3000, function() {
