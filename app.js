@@ -35,7 +35,6 @@ app.get("/compose", function(req, res){
 res.render("compose");
 });
 
-
 app.get("/posts/:postName", function(req, res){
 const requestedTitle = _.lowerCase(req.params.postName);
 
