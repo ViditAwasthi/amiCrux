@@ -2,29 +2,4 @@
 <h1><%= title %></h1>
 <p><%= content %></p>
 
-
-
-
 <%- include("partials/footer") %>
-
-
-db.products.insert(
-{
-  _id: 2,
-  name: "Pencil",
-  price: 15,
-  stock: 25,
-  reviews: [
-  {
-    authorName: "Jose",
-    rating: "5",
-    review: "Go for it!"
-  },
-  {
-    authorName: "Jazy",
-    rating: "3",
-    review: "Okay Okay"
-  }
-  ]
-}
-)
