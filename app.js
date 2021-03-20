@@ -49,8 +49,6 @@ posts.forEach(function(post){
 });
 });
 
-
-
 app.post("/compose", function(req, res){
 const post = {
   title: req.body.postTitle,
@@ -60,7 +58,6 @@ const post = {
 posts.push(post);
 res.redirect("/");
 });
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
