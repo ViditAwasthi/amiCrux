@@ -1,0 +1,2 @@
+Made a Platform to help the Juniors at the University. On this Platform people can come and share their experiences over any thing be it any Subject, Course, Course Content, Sources to Study and various other things. This would Contain basically all the articles posted by people in order to help their juniors who have just joined the college.
+Its built Using HTML, CSS, Bootstrap for the Front-end and Node.js, Express.js & EJS for the Back-end. Database which has been used is MongoDB.
